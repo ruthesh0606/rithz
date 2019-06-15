@@ -1,0 +1,5 @@
+API_TOKEN = '9cf3cf9b7654a32032a88d3a983b4042'
+DB_HOST = 'weatherlog.cybldb020azj.us-east-2.rds.amazonaws.com'
+DB_USER_NAME = 'admin'
+DB_DATABASE_NAME = 'weather_log'
+DB_PASSWORD = 'amvarish'
