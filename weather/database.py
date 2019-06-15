@@ -2,7 +2,7 @@ _author = 'Ruthesh'
 import pymysql as MySQLdb
 
 #import MySQLdb
-from credentails import DB_HOST,DB_USER_NAME,DB_DATABASE_NAME,DB_PASSWORD
+#from credentails import DB_HOST,DB_USER_NAME,DB_DATABASE_NAME,DB_PASSWORD
 
 class DatabaseOperation:
 	"""
@@ -10,10 +10,10 @@ class DatabaseOperation:
 	"""
 
 	def __init__(self):
-		self.conn = MySQLdb.connect(host=DB_HOST,
-							user=DB_USER_NAME,
-							passwd=DB_PASSWORD,
-							db=DB_DATABASE_NAME)
+		self.conn = MySQLdb.connect(host="localhost",
+							user="admin",
+							passwd="admin",
+							db="krishi")
 		self.cursor = self.conn.cursor()
 		self.key_order = ['summary','precipIntensity','precipIntensityError','precipProbability','precipType','humidity',
 			'temperature','apparentTemperature','windSpeed','windGust','windBearing','cloudCover','visibility']
