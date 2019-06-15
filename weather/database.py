@@ -25,10 +25,9 @@ class DatabaseOperation:
 						windGust,windBearing,cloudCover,visibility)
 						values 
 						(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"""
-		try:
-			self.cursor.execute(raw_query,(weather_data.get(key) for key in self.key_order))
-			self.conn.commit()
-			print ('Weather data inserted in database.')
-		except:
-			self.conn.rollback()
-			print ('Database insertion failed.')
+		self.cursor.execute(raw_query,(weather_data.get(key) for key in self.key_order))
+		self.conn.commit()
+		print ('Weather data inserted in database.')
+		#except:
+		#	self.conn.rollback()
+		#	print ('Database insertion failed.')
