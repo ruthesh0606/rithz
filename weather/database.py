@@ -25,7 +25,7 @@ class DatabaseOperation:
 						windGust,windBearing,cloudCover,visibility)
 						values 
 						(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"""
-		self.cursor.execute(raw_query,self.key_order)
+		self.cursor.execute(raw_query,weather_data)
 		self.conn.commit()
 		print ('Weather data inserted in database.')
 		#except:
