@@ -4,7 +4,6 @@ from api import WeatherAPI
 import database
 def main(lat,log):
 	weather_object = WeatherAPI()
-	database_object = DatabaseOperation()
 	print ('API call initilized.')
 	weather_data = weather_object.get_weather(lat,log)
 	print(weather_data)
