@@ -13,3 +13,4 @@ def insert_into_weather_data(weather_data):
 	raw_query = """INSERT INTO weatherlog(summary,precipIntensity,precipProbability,precipType,humidity,temperature,apparentTemperature,windSpeed,windGust,windBearing,cloudCover,visibility)values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"""
 	cursor.execute(raw_query,weather_data)
 	conn.commit()
+	conn.close()
