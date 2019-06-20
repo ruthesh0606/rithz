@@ -1,3 +1,5 @@
+/usr/bin/python3
+
 _author = 'Ruthesh'
 
 from api import WeatherAPI
