@@ -8,7 +8,7 @@ def main(lat,log):
 	weather_data = weather_object.get_weather(lat,log)
 	print(weather_data)
 	print ('Weather information fetched.')
-	database.insert_into_weather_data(self,weather_data)
+	database.insert_into_weather_data(weather_data)
 
 
 if __name__ == '__main__':
