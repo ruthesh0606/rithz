@@ -20,11 +20,11 @@ class DatabaseOperation:
 
 	def insert_into_weather_data(self,weather_data):
 		raw_query = """INSERT INTO weatherlog 
-						(summary,precipIntensity,precipIntensityError,precipProbability,
+						(summary,precipIntensity,precipProbability,
 						precipType,humidity,temperature,apparentTemperature,windSpeed,
 						windGust,windBearing,cloudCover,visibility)
 						values 
-						(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"""
+						(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"""
 		self.cursor.execute(raw_query,weather_data)
 		self.conn.commit()
 		print ('Weather data inserted in database.')
