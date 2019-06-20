@@ -1,3 +1,3 @@
 #!/bin/bash
-python3 app.py
+python3 /home/ubuntu/rithz/weather/app.py
 
