@@ -8,6 +8,7 @@ def main(lat,log):
 	database_object = DatabaseOperation()
 	print ('API call initilized.')
 	weather_data = weather_object.get_weather(lat,log)
+	print(weather_data)
 	print ('Weather information fetched.')
 	database_object.insert_into_weather_data(weather_data)
 	database_object.conn.close()
