@@ -13,6 +13,6 @@ def main(lat,log):
 
 
 if __name__ == '__main__':
-	main(12.9716,77.5946)
+	main(9.0950,76.4925)
 
 
